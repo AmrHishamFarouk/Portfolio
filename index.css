@@ -40,6 +40,19 @@ a{
     border-radius: .6em;
     color: burlywood;
 }
+.part1{
+    display: flex;
+    justify-content: space-between;
+    min-height: 30vw;
+}
+.part1 img{     
+    padding-right: 10vw;
+    object-fit: cover;
+    width: 25vw;
+}
+.part1 text{
+    width: 25vw;
+}
 .part3{
     padding:3em;
 }
@@ -69,3 +82,29 @@ a{
     height: auto;
     width: 70%;
 }
+
+.contact-contaner{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.contact{
+    height: 3rem;
+    width: 15rem;
+    background-color: #575757; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.7em;
+    margin: 1em 1em;
+}
+.contact :hover{
+    background-color: aqua;
+}
+
+/* img:hover{
+    transform: scale(1.4);
+    transition: 300ms;
+} */
