@@ -1,7 +1,12 @@
+:root{
+    --color: #FFD700;
+    --theme: #3f3f3f;
+}
+
 body{
     margin: 0;
     padding: 0;
-    background-color: #3f3f3f;
+    background-color: var(--theme);
     width: 100%;
 }
 nav{
@@ -36,9 +41,9 @@ a{
 .contact-btn{
     padding: 1em 2em;
     background-color: transparent;
-    border:solid 4px burlywood;
+    border:solid 4px var(--color);
     border-radius: .6em;
-    color: burlywood;
+    color: var(--color);
 }
 .part1{
     display: flex;
@@ -56,6 +61,21 @@ a{
 .part3{
     padding:3em;
 }
+.part2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.part2 p{
+    max-width: 80% ;
+}
+
+
+
+
+
+
 .skills{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(10rem,1fr));
@@ -78,11 +98,84 @@ a{
     max-width: 5em;
     max-height: 5em;
 }
+
+.skill img:hover{
+    transform: scale(1.4);
+    transition: 300ms;
+}
+
 .skillimg{
     height: auto;
     width: 70%;
 }
 
+
+.Achievements{
+    padding: 35px 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));;
+    gap: 3em;
+}
+
+.col{
+    padding: 0 3em;
+    border-left: 2px solid #FFD700 ;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    color: aliceblue;
+}
+
+.box::before{
+    content: 'mnbhjhu';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    right: calc(100% + 22px);
+    top: 0;
+    background-color: #11a372;
+    border: 2px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.part5{
+    border-top: 1px solid var(--color);
+    padding: 4em ;
+}
 .contact-contaner{
 display: flex;
 justify-content: center;
@@ -104,7 +197,11 @@ flex-wrap: wrap;
     background-color: aqua;
 }
 
-/* img:hover{
-    transform: scale(1.4);
-    transition: 300ms;
-} */
+.part6{
+    border-top: 1px solid var(--color);
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color);
+}
