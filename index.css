@@ -8,6 +8,7 @@ body{
     padding: 0;
     background-color: var(--theme);
     width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav{
     padding: 1em 2em 1em 2em;
@@ -34,10 +35,20 @@ a{
     color: aliceblue;
     margin: 0 2em;
 }
-.text{
-    margin-left:10%;
-    width:40vw;
+
+.part1{
+    display: flex;
+    justify-content: space-between;
+    min-height: 30vw;
+    box-shadow: 0px 20px 20px black;
 }
+
+.text{
+    margin-left:5%;
+    width:40vw;
+    padding: 2em;
+}
+
 .contact-btn{
     padding: 1em 2em;
     background-color: transparent;
@@ -45,11 +56,7 @@ a{
     border-radius: .6em;
     color: var(--color);
 }
-.part1{
-    display: flex;
-    justify-content: space-between;
-    min-height: 30vw;
-}
+
 .part1 img{     
     padding-right: 10vw;
     object-fit: cover;
@@ -58,22 +65,28 @@ a{
 .part1 text{
     width: 25vw;
 }
-.part3{
-    padding:3em;
-}
+
 .part2{
+    padding: 3em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: white;
 }
+/* .part2 h1{
+    align-self: flex-start;
+    padding: 0 2em;
+} */
 .part2 p{
     max-width: 80% ;
 }
 
 
-
-
+.part3{
+    padding:3em;
+    color: white;
+}
 
 
 .skills{
@@ -82,8 +95,8 @@ a{
     gap:3em;
     justify-content: center;
     align-items: center;
-
 }
+
 .skill{
     background-color: #575757;
     max-width: 15em;
@@ -93,6 +106,10 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.skill:hover{
+    background-color: var(--color);
 }
 .skill img{
     max-width: 5em;
@@ -126,8 +143,8 @@ a{
     color: aliceblue;
 }
 
-.box::before{
-    content: 'mnbhjhu';
+/* .box::before{
+    content: '';
     position: absolute;
     width: 16px;
     height: 16px;
@@ -136,46 +153,24 @@ a{
     top: 0;
     background-color: #11a372;
     border: 2px solid white;
+} */
+
+
+.part4{
+    color: white;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.part42{
+    color: white;
+}
 
 
 
 .part5{
     border-top: 1px solid var(--color);
     padding: 4em ;
+    color: white;
 }
+
 .contact-contaner{
 display: flex;
 justify-content: center;
@@ -193,9 +188,12 @@ flex-wrap: wrap;
     border-radius: 0.7em;
     margin: 1em 1em;
 }
-.contact :hover{
-    background-color: aqua;
+
+.contact:hover{
+    background-color: var(--color);
+    color: black;
 }
+
 
 .part6{
     border-top: 1px solid var(--color);
